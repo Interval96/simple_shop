@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>СК ТандеМ | Главная страница</title>
+	<link href="style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<script>
+	jsHover = function() {
+		var hEls = document.getElementById("menu").getElementsByTagName("li");
+		for (var i = 0, len = hEls.length; i < len; i++) {
+			hEls[i].onmouseover = function() {
+				this.className += " jshover";
+			}
+			hEls[i].onmouseout = function() {
+				this.className = this.className.replace(" jshover", "");
+			}
+		}
+	}
+	if (window.attachEvent && navigator.userAgent.indexOf("Opera") == -1) window.attachEvent("onload", jsHover);
+</script>
+
+<body>
+	<div class="page">
+		<div class="top-menu">
+			<div class="logo">
+				<a href="#"><img src="img/logo.png" /></a>
+			</div>
+			<ul class="menu">
+				<li class="menuactive"><a href="#">ГЛАВНАЯ</a></li>
+				<li><a href="#">О ПРЕДПРИЯТИИ</a></li>
+				<li><a href="#">АРХИВ ДОКУМЕНТОВ</a>
+					<ul>
+						<li><a href="#">СВИДЕТЕЛЬСТВА</a></li>
+						<li><a href="#">СЕРТИФИКАТЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ГАЛЕРЕЯ ОБЪЕКТОВ</a></li>
+				<li class="menuimg"><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="bgaddress">
+				<div class="addresstext">
+					<h3>АДРЕС</h3>
+					<br><span>пр.Машиностроителей, 23, корпус 12<br>Курганская область, г.Курган,<br> 6400007</span></div>
+			</div>
+			<div class="aboutcomp">
+				<h3>О нас</h3>
+				<p>Строительная компания ООО "СК ТандеМ" открыто в феврале 2015 г.</p>
+				<p>Основной профиль работ, строительство, реконструкция и текущий ремонт зданий.</p>
+				<p>ООО "СК ТандеМ" имеет допуск к работам имеющим влияние на безопасность объектов капитального строительства и входит в СРО Некоммерческое партнерство "Строительный Альянс Монолит" г. Москва. </p>
+				<p>Кадровый состав предприятия укомплектован специалистами с профессиональным стажем более 10 лет.</p>
+				<p>Руководящий инженерный состав имеют именные сертификаты соответствия аудитора Евразийской системы сертификации.</p>
+				<p>По банковской статистике оборота средств ООО "СК ТандеМ" является предприятием положительной доходности. Предприятие работает на территории г. Кургана и Курганской области, как с частными заказчиками, так и с организациями. Одним из постоянных заказчиков
+					является крупнейший Российский рителлер АО "Тандер" г. Краснодар.</p>
+				<p>Основные цели работы предприятия это повышение профессионализма сотрудников, расширение географии объектов, повышение уровня доходности.</p>
+
+				<div class="btn-container">
+					<button>ПОДРОБНЕЕ</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>
