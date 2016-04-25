@@ -4,7 +4,7 @@
     font-family: roboto;
 }
 body {
-    background-color: #bababa;
+    background-image: url(img/bgtextute.jpg);
 }
 .logo {
     display: inline-block;
@@ -17,13 +17,18 @@ body {
 	width: calc(100% - 259px);
 }
 .page {
-		background: url(img/bgabout.png) no-repeat;
+	
+	background-color: #fff;
     width: 1170px;
     margin: auto;
-    /*background-color: #fff; */
     height: 1000px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.page1 {
+	background: url(img/bgabout.png) no-repeat;
+	    z-index: 1;
+    position: relative;
+}
+
 .top-menu {
     width: 1160px;
 		padding-left: 10px;
@@ -36,9 +41,7 @@ body {
 
 .top-menu li {
     list-style: none;
-    /*Убираем маркер*/
     display: inline-block;
-    /*Выстраиваем пункты в ряд*/
     position: relative;
     z-index: 2;
 }
@@ -47,22 +50,16 @@ body {
 }
 .top-menu li a {
     color: #fff;
-    /*Цвет шрифта в пункте*/
     padding: 32px 7px;
-    /*Отступы для пункта*/
     text-decoration: none;
-    /*Убираем подчеркивание*/
     display: block;
     width: 150px;
 }
 .top-menu li ul {
     display: none;
-    /*Прячем выпадающее меню*/
     position: absolute;
     width: 150px;
-    /*Ширина выпадающего меню*/
     padding-top: 0px;
-    /*Отступ сверху у выпадающего меню*/
     margin: 0;
     padding: 0;
     z-index: 1;
@@ -84,6 +81,7 @@ body {
     width: 192px;
     height: 98px;
     position: relative;
+	left: 1px;
     background-image: url(img/menu-element.png);
 }
 .menuimg li a {
@@ -108,12 +106,18 @@ body {
     color: #eb0445;
     border: 1px solid black;
     border-radius: 5px;
+	margin-top: 30px;
 }
 .aboutcomp button:hover {
     color: #fff;
 }
+
+.aboutcomp h3{
+	margin-bottom: 10px;
+}
 .aboutcomp p {
     margin-bottom: 5px;
+	font-size: 14px;
 }
 .content {
 
@@ -154,4 +158,93 @@ body {
     height: 73px;
     margin: auto;
     text-align: center;
+}
+
+.footer {
+	position: relative;
+    top: 315px;
+	height: 80px;
+	background-color: #000; 
+	width: 1170px;
+	color: #fff;
+	text-align: right;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer h4{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: italic;
+}
+.footer p{
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+.middlemenu {
+	display: inline-block;
+	top: -125px;
+    position: relative;
+	display: table-cell;
+	width: 1170px;
+	height: 241px;
+	position:relative;
+	
+}
+	
+
+.gallery {
+	background-image: url(img/gallery.png);
+	list-style: none;
+	width: 292.5px;
+	height: 241px;
+	display: table-cell;
+}
+
+.gallery:hover {
+	background-image: url(img/galleryh.png);
+}
+
+.archive {
+	background-image: url(img/archive.png);
+	list-style: none;
+	width: 292.5px;
+	height: 241px;
+	display: table-cell;
+}
+
+.archive:hover {
+	background-image: url(img/archiveh.png);
+}
+
+.feedback {
+	background-image: url(img/feedback.png);
+	list-style: none;
+	width: 292.5px;
+	height: 241px;
+	display: table-cell;
+}
+
+.feedback:hover {
+	background-image: url(img/feedbackh.png);
+}
+
+.about {
+	background-image: url(img/about.png);
+	list-style: none;
+	width: 292.5px;
+	height: 241px;
+	display: table-cell;
+}
+
+.about:hover {
+	background-image: url(img/abouth.png);
+}
+
+.map {
+	position: relative;
+	top: -125px;
 }
