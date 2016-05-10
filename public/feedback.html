@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>СК ТандеМ | Главная страница</title>
+	<link href="style3.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+</head>
+<script>
+	jsHover = function() {
+		var hEls = document.getElementById("menu").getElementsByTagName("li");
+		for (var i = 0, len = hEls.length; i < len; i++) {
+			hEls[i].onmouseover = function() {
+				this.className += " jshover";
+			}
+			hEls[i].onmouseout = function() {
+				this.className = this.className.replace(" jshover", "");
+			}
+		}
+	}
+	if (window.attachEvent && navigator.userAgent.indexOf("Opera") == -1) window.attachEvent("onload", jsHover);
+</script>
+
+<body>
+	<div class="page">
+	<div class="page1">
+		<div class="top-menu">
+			<div class="logo">
+				<a href="#"><img src="img/logo.png" /></a>
+			</div>
+			<ul class="menu">
+				<li class="menuactive"><a href="#">ГЛАВНАЯ</a></li>
+				<li><a href="#">О ПРЕДПРИЯТИИ</a></li>
+				<li><a href="#">АРХИВ ДОКУМЕНТОВ</a>
+				</li>
+				<li><a href="#">ГАЛЕРЕЯ ОБЪЕКТОВ</a></li>
+				<li class="menuimg"><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+			</ul>
+		</div>
+		<br>
+
+<form class="contact_form" action="contact-form.php" method="post">
+	<p>
+            <label for="name">Имя:</label>
+            <input type="text"  name="name" placeholder="Введите ваше имя" required />
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Введите электронный адрес" required />
+
+        </p>
+        <p>
+            <label for="tel">Телефон:</label>
+            <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+
+        </p>
+        <p>
+            <label for="website">Сайт:</label>
+            <input type="url" name="website" placeholder="Введите адрес вашего сайта" pattern="(http|https)://.+"/>
+
+        </p>
+        <p>
+            <label for="message">Текст сообщения:</label>
+            <textarea name="message" cols="40" rows="6" required ></textarea>
+        </p>
+	    <input name="bezspama" type="text" style="display:none" value="" />
+        <p>
+            <button class="submit" type="submit">Отправить сообщение</button>
+        </p>
+</form>
+		
+		
+		
+		
+		
+	</div>
+	
+	<div class="footer">
+		<h4>тел. 8(912) 837-08-29145</h2>
+		<p>ООО "СК ТандеМ"</p>
+	</div>
+
+</body>
+
+</html>

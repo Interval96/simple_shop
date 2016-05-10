@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>СК ТандеМ | Архив документов</title>
+	<link href="css/style2.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	
+	
+	<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css?v=1.5.5" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/jgallery.min.js?v=1.5.5"></script>
+<script type="text/javascript" src="js/touchswipe.min.js"></script>
+	
+	
+	
+	
+</head>
+<script>
+	jsHover = function() {
+		var hEls = document.getElementById("menu").getElementsByTagName("li");
+		for (var i = 0, len = hEls.length; i < len; i++) {
+			hEls[i].onmouseover = function() {
+				this.className += " jshover";
+			}
+			hEls[i].onmouseout = function() {
+				this.className = this.className.replace(" jshover", "");
+			}
+		}
+	}
+	if (window.attachEvent && navigator.userAgent.indexOf("Opera") == -1) window.attachEvent("onload", jsHover);
+</script>
+
+<body>
+	<div class="page">
+	<div class="page1">
+			<div class="top-menu">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" /></a>
+			</div>
+			<ul class="menu">
+				<li class="menuactive"><a href="index.html">ГЛАВНАЯ</a></li>
+				<li><a href="about.html">О ПРЕДПРИЯТИИ</a></li>
+				<li><a href="archive.html">АРХИВ ДОКУМЕНТОВ</a>
+				</li>
+				<li><a href="gallery.html">ГАЛЕРЕЯ ОБЪЕКТОВ</a></li>
+				<li class="menuimg"><a href="mailto: tandem45@inbox.ru">ОБРАТНАЯ СВЯЗЬ</a></li>
+			</ul>
+		</div>
+		<br>
+		<div id="gallery" >
+    <a href="images/large/31731(1).jpg"><img src="images/thumbs/31731(1).jpg" alt="" /></a>
+    <a href="images/large/31731(2).jpg"><img src="images/thumbs/31731(2).jpg" alt="" /></a>
+    <a href="images/large/31731(3).jpg"><img src="images/thumbs/31731(3).jpg" alt="" /></a>
+	<a href="images/large/31731(4).jpg"><img src="images/thumbs/31731(4).jpg" alt="" /></a>
+    <a href="images/large/31731(5).jpg"><img src="images/thumbs/31731(5).jpg" alt="" /></a>
+    <a href="images/large/31731(6).jpg"><img src="images/thumbs/31731(6).jpg" alt="" /></a>
+	<a href="images/large/31731(7).jpg"><img src="images/thumbs/31731(7).jpg" alt="" /></a>
+    <a href="images/large/31731(8).jpg"><img src="images/thumbs/31731(8).jpg" alt="" /></a>
+    <a href="images/large/31731(9).jpg"><img src="images/thumbs/31731(9).jpg" alt="" /></a>
+	<a href="images/large/svidetelstvoinn.jpeg"><img src="images/thumbs/svidetelstvoinn.jpeg" alt="" /></a>
+    <a href="images/large/svidetelstvoogrn.jpeg"><img src="images/thumbs/svidetelstvoogrn.jpeg" alt="" /></a>
+	
+</div>
+<script type="text/javascript">
+$( function() {
+    $( '#gallery' ).jGallery();
+} );
+</script>
+	</div>
+	
+	<div class="footer">
+		<h4>тел. 8(912) 837-08-29145</h2>
+		<p>ООО "СК ТандеМ"</p>
+	</div>
+
+</body>
+
+</html>
