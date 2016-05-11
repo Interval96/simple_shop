@@ -114,6 +114,10 @@ body {
     color: #fff;
 }
 
+a:visited {
+color: #eb0445;
+}
+
 .aboutcomp h3{
 	margin-bottom: 10px;
 }
