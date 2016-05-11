@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
       redirect_to products_path, flash: { notice: 'Заказ оформлен' }
     else
       # Иначе просто вернули на главную
-      redirect_to root_path
+      redirect_to products_path
     end
   end
 
