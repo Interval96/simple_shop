@@ -16,7 +16,7 @@ class OrdersController < ApplicationController
       # Очистили корзину
       @cart.cart_items.destroy_all
       # Вернули на главную c сообщением что заказ создан
-      redirect_to root_path, flash: { notice: 'Заказ оформлен' }
+      redirect_to products_path, flash: { notice: 'Заказ оформлен' }
     else
       # Иначе просто вернули на главную
       redirect_to root_path
