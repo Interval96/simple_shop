@@ -2,6 +2,10 @@ body {
   background-image: url(background.jpg);
 }
 
+.container {
+  background-color: white;
+}
+
 .product {
   min-width: 120px;
   .product-photo, .product-info {
