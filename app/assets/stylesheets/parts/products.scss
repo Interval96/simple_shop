@@ -19,6 +19,13 @@ h1 {
   background: #000;
 }
 
+.profile {
+  color: white;
+}
+.profile.a {
+  color: #EB0445;
+}
+
 .product {
   min-width: 120px;
   .product-photo, .product-info {
