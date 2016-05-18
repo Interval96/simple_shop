@@ -5,12 +5,19 @@ ru:
         blank: Отсутствует
         not_a_number: Не число
     attributes:
+      user:
+        name: Имя
+        phone: Телефон
+        address: Адрес
       product:
         name: Наименование
         description: Описание
         quantity: Количество
         price: Цена
         photo: Фото
+        categories: Категории
+      category:
+        title: Название
   time:
     formats:
       default: "%d/%m/%Y %H:%M:%S"

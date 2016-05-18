@@ -22,4 +22,7 @@
         = form.label(:photo)
         = form.file_field(:photo, class: 'form-control')
       .form-group
+        = form.label(:categories)
+        = form.select(:category_ids, Category.all.map{ |c| [c.title, c.id]}, {}, multiple: true, class: 'select2 form-control')
+      .form-group
         = form.submit 'Сохранить товар', class: 'btn btn-success'

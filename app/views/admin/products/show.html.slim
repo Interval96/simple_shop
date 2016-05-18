@@ -6,6 +6,9 @@
   .col-md-12
     .product
       h2= @product.name
+      .product-tags
+        - @product.categories.each do |category|
+          span.label.label-primary= category.title
       .product-photo
         = image_tag(@product.photo.url, size: '300x300')
       .product-info

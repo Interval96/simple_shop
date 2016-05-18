@@ -1,0 +1,18 @@
+.row
+  .col-md-12
+    = link_to 'Создать категорию', new_admin_category_path, class: 'btn btn-success'
+    h3 Список категорий:
+  .col-md-12
+    table.table
+      thead
+        th Категория
+        th Количество товаров
+        th
+      tbody
+        - @categories.each do |category|
+          tr
+            td= category.title
+            td= category.products.count
+            td
+              = link_to 'Изменить', edit_admin_category_path(category), class: 'btn btn-sm btn-warning blink'
+              = link_to 'Убрать', admin_category_path(category), method: :delete, data: { confirm: 'Вы уверены?'}, class: 'btn btn-sm btn-danger blink'

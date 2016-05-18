@@ -1,0 +1,20 @@
+.row
+  .col-md-12
+    .back-link
+      = link_to 'Назад ', admin_users_path
+
+  .col-md-12
+    .product
+      .product-info
+        p
+          span.header Имя
+          span= @user.name
+        p
+          span.header Email
+          span= @user.email
+        p
+          span.header Телефон
+          span= @user.phone
+        p
+          span.header Адрес
+          span= @user.address

@@ -1,0 +1,13 @@
+.row
+  .col-md-12
+    h2 Изменить категорию
+.row
+  .col-md-4
+    = form_for @category, url: admin_category_path(@category) do |form|
+      - if @category.errors.any?
+          p.text-danger= @category.errors.full_messages.join(', ')
+      .form-group
+        = form.label(:title)
+        = form.text_field(:title, class: 'form-control')
+      .form-group
+        = form.submit 'Сохранить категорию', class: 'btn btn-success'

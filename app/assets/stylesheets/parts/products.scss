@@ -34,6 +34,9 @@ h3 {
 
 .product {
   min-width: 120px;
+  .product-tags {
+    margin-bottom: 10px;
+  }
   .product-photo, .product-info {
     float: left;
     margin-left: 10px;

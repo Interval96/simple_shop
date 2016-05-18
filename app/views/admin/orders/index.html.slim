@@ -11,7 +11,7 @@
       tbody
         - @orders.each do |order|
           tr
-            td= order.user.email
+            td= link_to order.user.name, admin_user_path(order.user)
             td= I18n.l order.created_at
             td= order.total
             td

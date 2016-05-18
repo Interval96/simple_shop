@@ -1,0 +1,17 @@
+.row
+  .col-md-12
+    h3 Список пользователей:
+  .col-md-12
+    table.table
+      thead
+        th Имя
+        th Email
+        th Телефон
+        th Адрес
+      tbody
+        - @users.each do |user|
+          tr
+            td= link_to user.name, admin_user_path(user)
+            td= user.email
+            td= user.phone
+            td= user.address

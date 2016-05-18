@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Добрый день, <%= @user.name %>!</h1>
+    <p> Ваш заказ:</p>
+    <ul>
+    <%- @order.order_items.each do |item|  %>
+      <li> <%= "#{item.product.name} - #{item.quantity}" %> </li>
+    <% end  %>
+    </ul>
+    <p>
+      Сумма к оплате <%= @order.total %> руб.
+     </p>
+  </body>
+</html>

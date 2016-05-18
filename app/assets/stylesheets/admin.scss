@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "select2";
+@import "select2-bootstrap";
 
 .blink {
   opacity: 0;
@@ -20,6 +22,10 @@ tr:hover {
   .form-control {
     border-color: red;
   }
+}
+
+.label {
+  margin-right: 10px;
 }
 
 @import 'parts/products';

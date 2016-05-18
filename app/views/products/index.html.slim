@@ -1,23 +1,35 @@
 .row
-  h3 Список товаров:
-  - @products.each do |product|
-    .col-md-4
-      .product
-        .product-photo
-          = image_tag(product.photo.url, size: '120x120')
-        .product-info
-          p
-            span.header Название:
-            span= link_to product.name, product_path(product)
-          p
-            span.header Стоимость:
-            span= product.price
-          p
-            span.header Количество:
-            span= product.quantity
-          - if current_user
-            = form_for CartItem.new do |form|
-              = form.hidden_field :cart_id, value: current_user.cart.id
-              = form.hidden_field :product_id, value: product.id
-              = form.number_field :quantity, class: 'input quantity', min: 1, max: product.quantity, value: 1
-              = form.submit 'Добавить в корзину', class: 'btn btn-success'
+  .col-md-12
+    h3 Категории:
+  .col-md-12
+    - Category.all.each do |cat|
+      =link_to(cat.title, products_path(cat: cat.id), class: 'label label-info')
+.row
+  .col-md-12
+    h3 Список товаров:
+- while @products.any?
+  .row
+    - @products.shift(3).each do |product|
+      .col-md-4
+        .product
+          .product-tags
+            - product.categories.each do |category|
+              span.label.label-primary= category.title
+          .product-photo
+            = image_tag(product.photo.url, size: '120x120')
+          .product-info
+            p
+              span.header Название:
+              span= link_to product.name, product_path(product)
+            p
+              span.header Стоимость:
+              span= product.price
+            p
+              span.header Количество:
+              span= product.quantity
+            - if current_user
+              = form_for CartItem.new do |form|
+                = form.hidden_field :cart_id, value: current_user.cart.id
+                = form.hidden_field :product_id, value: product.id
+                = form.number_field :quantity, class: 'input quantity', min: 1, max: product.quantity, value: 1
+                = form.submit 'Добавить в корзину', class: 'btn btn-success'

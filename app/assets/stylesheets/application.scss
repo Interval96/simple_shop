@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "select2";
+@import "select2-bootstrap";
 
 html, body {
   height: 100%;
@@ -15,6 +17,10 @@ html, body {
 }
 footer, .page-wrap:after {
   height: 120px;
+}
+
+.label {
+  margin-right: 10px;
 }
 
 @import 'parts/header';
