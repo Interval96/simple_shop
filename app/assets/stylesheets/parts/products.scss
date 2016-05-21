@@ -14,9 +14,26 @@ h1 {
   color: white;
 }
 
+a {
+  color: #FF0045;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.label-primary {
+  background-color: #FF0045;
+}
+
 h3 {
   margin-left: 25px;
   margin-bottom: 40px;
+}
+
+.label-info[href]:hover {
+  background-color: #000;
 }
 
 .label-info {
