@@ -26,7 +26,7 @@
                   span= link_to product.name, product_path(product)
                 p
                   span.header Стоимость:
-                  span= "#{product.price.round(2)} руб."
+                  span= "#{sprintf('%.2f', product.price)} руб"
                 - if current_user
                   = form_for CartItem.new do |form|
                     = form.hidden_field :cart_id, value: current_user.cart.id
