@@ -21,7 +21,6 @@
               .product-photo
                 = image_tag(product.photo.url, size: '200x200')
                 p
-                  span.header
                   span.pricedesign= "#{sprintf('%.2f', product.price)} руб"
                 - if current_user
                   = form_for CartItem.new do |form|
