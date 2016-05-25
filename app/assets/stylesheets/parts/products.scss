@@ -22,7 +22,9 @@ a {
 a:hover {
   color: #000;
 }
-
+.container {
+background: #fff;
+}
 .label-primary {
   background-color: #FF0045;
 }
@@ -60,7 +62,6 @@ background-color:#FF0045
 
 .product {
   min-width: 120px;
-  background: #fff;
   .product-tags {
     margin-bottom: 10px;
   }
