@@ -6,7 +6,7 @@
       .col-md-12
         - Category.all.each do |cat|
           =link_to(cat.title, products_path(cat: cat.id), class: 'label label-info category-btn')
-  col-md8.col-md-offset-2
+  col-md-8.col-md-offset-2
     .row
       .col-md-12
         h3 Список товаров:
