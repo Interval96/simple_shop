@@ -20,7 +20,7 @@
                   span.header 
                   span= link_to product.name, product_path(product)
               .product-photo
-                = image_tag(product.photo.url, size: '120x120')
+                = image_tag(product.photo.url, size: '200x200')
                 p
                   span.header Стоимость:
                   span= "#{sprintf('%.2f', product.price)} руб"
