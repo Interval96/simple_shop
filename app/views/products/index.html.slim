@@ -27,9 +27,6 @@
                 p
                   span.header Стоимость:
                   span= product.price
-                p
-                  span.header Количество:
-                  span= product.quantity
                 - if current_user
                   = form_for CartItem.new do |form|
                     = form.hidden_field :cart_id, value: current_user.cart.id
