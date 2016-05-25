@@ -16,8 +16,7 @@
           .col-md-4.productdesign
             .product
               .product-info.namedesign
-                p
-                  span.header 
+                p 
                   span= link_to product.name, product_path(product)
               .product-photo
                 = image_tag(product.photo.url, size: '200x200')
