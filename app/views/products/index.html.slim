@@ -15,12 +15,12 @@
         - @products.shift(3).each do |product|
           .col-md-4.productdesign
             .product
+              .product-info
                 p
                   span.header Название:
                   span= link_to product.name, product_path(product)
               .product-photo
                 = image_tag(product.photo.url, size: '120x120')
-              .product-info
                 p
                   span.header Стоимость:
                   span= "#{sprintf('%.2f', product.price)} руб"
