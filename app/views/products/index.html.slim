@@ -13,7 +13,7 @@
     - while @products.any?
       .row
         - @products.shift(3).each do |product|
-          .col-md-4
+          .col-md-4.productdesign
             .product
               .product-tags
                 - product.categories.each do |category|
