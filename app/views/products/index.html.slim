@@ -22,7 +22,7 @@
                 = image_tag(product.photo.url, size: '200x200')
                 p
                   span.header
-                  span= "#{sprintf('%.2f', product.price)} руб"
+                  span.pricedesign= "#{sprintf('%.2f', product.price)} руб"
                 - if current_user
                   = form_for CartItem.new do |form|
                     = form.hidden_field :cart_id, value: current_user.cart.id
