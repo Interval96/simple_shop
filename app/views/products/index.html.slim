@@ -17,7 +17,7 @@
             .product
               .product-info
                 p
-                  span.header Название:
+                  span.header 
                   span= link_to product.name, product_path(product)
               .product-photo
                 = image_tag(product.photo.url, size: '120x120')
