@@ -2,14 +2,14 @@
   .col-md-2
     .row
       .col-md-12
-        h3.categorydesign Категории:
+        h3 
       .col-md-12
         - Category.all.each do |cat|
           =link_to(cat.title, products_path(cat: cat.id), class: 'label label-info category-btn')
   .col-md-9.col-md-offset-1
     .row
       .col-md-12
-        h3 Список товаров:
+        h3 
     - while @products.any?
       .row
         - @products.shift(3).each do |product|
